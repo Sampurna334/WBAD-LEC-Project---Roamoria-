@@ -1,0 +1,398 @@
+/* ====== FONT & ROOT ====== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #C1440E;
+  --secondary-color: #FFD700;
+  --accent-color: #3B7A57;
+  --dark-color: #333333;
+  --highlight-color: #0077B6;
+  --light-bg: #f8fafc;
+  --white: #fff;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-body);
+  background: var(--light-bg);
+  color: var(--dark-color);
+  min-height: 100vh;
+}
+
+/* ====== HEADER & NAV ====== */
+header img {
+  height: 60px;
+  width: auto;
+}
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+nav ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s;
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--secondary-color);
+}
+
+/* ====== BREADCRUMBS & HEADER INFO ====== */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+  margin: 2rem 0 0.5rem 0;
+  padding-left: 2rem;
+  font-family: var(--font-body);
+}
+.breadcrumbs a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.breadcrumbs p {
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.breadcrumbs a:hover {
+  color: var(--secondary-color);
+}
+.breadcrumbs .current {
+  color: var(--dark-color);
+  font-weight: bold;
+  pointer-events: none;
+}
+.header-info {
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  padding-left: 2rem;
+}
+.header-info i {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.header-info .source {
+  color: var(--secondary-color);
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+/* ====== MAIN CONTENT ====== */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 60px 20px 40px 20px;
+  background: var(--white);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(193,68,14,0.07);
+  margin: 2rem auto 3rem auto;
+  max-width: 1100px;
+}
+.image-container {
+  flex: 1 1 350px;
+  max-width: 480px;
+  position: relative;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(28, 124, 84, 0.10);
+}
+.image-container img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  display: block;
+}
+.text-content {
+  flex: 1 1 320px;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border-radius: 1.2rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 2px 12px rgba(193,68,14,0.06);
+}
+.text-content h1 {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+.text-content p {
+  font-size: 1.15rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+.links a {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-right: 8px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.links a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* ====== SECTION HEADER ====== */
+.section-header {
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  padding-left: 2rem;
+}
+.section-header h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-family: var(--font-heading);
+  border-left: 5px solid var(--secondary-color);
+  padding-left: 1rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fffbe7 60%, transparent 100%);
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0 2px 12px rgba(1,187,191,0.07);
+}
+
+/* ====== SWIPER SLIDER CARD ====== */
+.shopping-swiper {
+  padding: 0 0 2rem 0;
+}
+.shopping-seminyak .swiper-wrapper{
+  display: flex;
+}
+.shopping-seminyak .swiper-slide::before {
+  display: none;
+}
+.shopping-seminyak .swiper-slide {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(28, 124, 84, 0.08);
+  transition: 
+    box-shadow 0.25s cubic-bezier(.4,2,.6,1), 
+    transform 0.18s cubic-bezier(.4,2,.6,1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  min-width: 180px;
+  max-width: 95vw;
+  min-height: 340px;
+  border: 1.5px solid transparent;
+  position: relative;
+}
+.shopping-seminyak .swiper-slide:hover{
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 12px 40px rgba(193, 68, 14, 0.13), 0 2px 8px rgba(1,187,191,0.08);
+  border-color: var(--primary-color);
+  z-index: 2;
+}
+.shopping-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.shopping-card-content {
+  padding: 1.2rem 1rem 1rem 1rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.shopping-card-content .card-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 1rem;
+  width: 100%;
+}
+.shopping-card-content .card-header-flex h3 {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 70%;
+  font-size: 1.15rem;
+  color: var(--primary-color);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.rating {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 2.5rem 0 1.5rem 0;
+  margin-top: 3rem;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 0 2rem;
+}
+.footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  font-family: var(--font-heading);
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col ul li,
+.footer-col ul a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-col ul a:hover,
+.footer-col ul li:hover {
+  color: var(--secondary-color);
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.social-icons a:hover {
+  color: var(--secondary-color);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    gap: 24px;
+    padding: 30px 10px 20px 10px;
+  }
+  .image-container img {
+    height: 200px;
+  }
+  .text-content {
+    padding: 1.5rem 1rem;
+  }
+  .swiper-slide.shopping-card {
+    width: 80vw;
+    min-width: 180px;
+    max-width: 95vw;
+  }
+  .shopping-swiper,
+  .mall-swiper {
+    padding: 0 0.2rem 1.5rem 0.2rem;
+  }
+  .section-header {
+    padding-left: 0.5rem;
+  }
+  .breadcrumbs,
+  .header-info {
+    padding-left: 0.5rem;
+  }
+  .footer-container {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-content {
+    padding: 16px 2px 10px 2px;
+  }
+  .image-container img {
+    height: 120px;
+  }
+  .text-content h1 {
+    font-size: 1.3rem;
+  }
+  .section-header h2 {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+  .swiper-slide.shopping-card {
+    width: 98vw;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 900px) {
+  .shopping-seminyak .swiper-slide {
+    width: 80vw;
+    min-width: 180px;
+    max-width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .shopping-seminyak .swiper-slide{
+    width: 95vw;
+    min-width: 120px;
+    max-width: 98vw;
+  }
+}

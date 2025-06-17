@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Roamoria</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">
+            <img src="assets/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destination">Destination</a></li>
+        <li><a href="#blog">News</a></li>
+        <li>
+          <a href="/Login/Login.html" class="btn">
+            Sign In
+            <span><i class="ri-arrow-right-long-line"></i></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <img src="assets/plane.png" alt="plane" />
+        <h1>Welcome Your Gateway to Unforgettable Journeys!</h1>
+        <p class="section__description">
+          Discover the world with us. Whether you're seeking tropical beaches, historical landmarks, or exciting adventures, we provide personalized travel experiences designed to create lasting memories. Start planning your next trip today!
+        </p>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="assets/about.jpg" alt="about" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__header">
+            It's Time For a <span>New Adventure!</span> Don't Wait Any Longer.
+          </h2>
+          <p class="section__description">
+            At Roamoria, we are passionate travelers dedicated to helping others explore the beauty of the world. Our mission is to make travel easy, enjoyable, and affordable for everyone.
+          </p>
+          <div class="about__signature">Howard</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="destination" id="destination">
+      <div class="section__container destination__container">
+        <h3 class="section__subheader">Top Destination</h3>
+        <h2 class="section__header">Our Top Destinations</h2>
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img src="assets/bromo.jpeg" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Enjoy the spectacular sunrise view</h4>
+              <h5>Bromo, Jawa Timur</h5>
+              <div class="destination__card__footer">
+                <h6>IDR 1.500.000</h6>
+                <p>(2 days)</p>
+              </div>
+            </div>
+            <a href="/Bromo/html/index.html">See More</a>
+          </div>
+          <div class="destination__card">
+            <img src="assets/destination-2.jpg" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Enjoy the tour of paradise with pristine beaches</h4>
+              <h5>Bali, Indonesia</h5>
+              <div class="destination__card__footer">
+                <h6>IDR 8.950.000</h6>
+                <p>(6 days)</p>
+              </div>
+            </div>
+            <a href="/Bali/html/index.html">See More</a>
+          </div>
+          <div class="destination__card">
+            <img src="assets/Yogya.jpg" alt="destination" />
+            <div class="destination__card__content">
+              <h4>Enjoy the trip and immerse yourself in the rich culture.</h4>
+              <h5>Yogyakarta, Indonesia</h5>
+              <div class="destination__card__footer">
+                <h6>IDR 850.000</h6>
+                <p>(1 days)</p>
+              </div>
+            </div>
+            <a href="/Jogja/html/index.html">See More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section__container review__container">
+      <div class="review__image">
+        <img src="assets/review.png" alt="review" />
+      </div>
+      <div class="review__content">
+        <h3 class="section__subheader">Top Reviews</h3>
+        <h2 class="section__header">Our Valuable Clients Say Abour Us</h2>
+        <div class="swiper review-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="review__card">
+                <span><i class="ri-double-quotes-l"></i></span>
+                <p class="section__description">
+                  Roamoria made my dream vacation a reality! From the moment I
+                  started planning, their team provided excellent
+                  recommendations and tailored my itinerary to perfection. Every
+                  experience felt personalized, and I loved how seamless the
+                  entire journey was.
+                </p>
+                <h4>Arden Junior</h4>
+                <h5>Travel Blogger</h5>
+                <div>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <div class="section__container blog__container">
+        <h3 class="section__subheader">Latest News & Blogs</h3>
+        <h2 class="section__header">Our Latest News & Blogs</h2>
+        <div class="blog__grid">
+          <div class="blog__card">
+            <img src="assets/blog-1.jpg" alt="blog" />
+            <div class="blog__content">
+              <h4>Top 10 Must-Visit Destinations for Your Next Adventure</h4>
+              <button class="btn" onclick="location.href='blog1.html'">
+                Read More
+                <span><i class="ri-arrow-right-long-line"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-2.jpg" alt="blog" />
+            <div class="blog__content">
+              <h4>Travel Smart: Essential Tips for Stress-Free Vacations</h4>
+              <button class="btn" onclick="location.href='blog2.html'">
+                Read More
+                <span><i class="ri-arrow-right-long-line"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="blog__card">
+            <img src="assets/blog-3.jpg" alt="blog" />
+            <div class="blog__content">
+              <h4>
+                Hidden Gems: Discover Offbeat Locations for Unique Experience
+              </h4>
+              <button class="btn" onclick="location.href='blog3.html'">
+                Read More
+                <span><i class="ri-arrow-right-long-line"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="banner__wrapper">
+        <img src="assets/banner-1.jpg" alt="banner" />
+        <img src="assets/banner-2.jpg" alt="banner" />
+        <img src="assets/banner-3.jpg" alt="banner" />
+        <img src="assets/banner-4.jpg" alt="banner" />
+        <img src="assets/banner-5.jpg" alt="banner" />
+        <img src="assets/banner-6.jpg" alt="banner" />
+        <img src="assets/banner-7.jpg" alt="banner" />
+        <img src="assets/banner-8.jpg" alt="banner" />
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__logo">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+        <ul class="footer__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#blog">News</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li>
+            <a href="https://www.facebook.com/BromoVulcano/"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://x.com/Mount_Bromo"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/bbtnbromotenggersemeru?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="ri-instagram-line"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/showcase/wisata-bromo-tengger-semeru/?originalSubdomain=dk"><i class="ri-linkedin-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 Roamoria. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

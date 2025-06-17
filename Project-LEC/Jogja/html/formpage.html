@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Package - BromoEscape</title>
+    <link rel="shortcut icon" href="assets/favicon_mount1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/Jogja/css/style.css">
+    <link rel="stylesheet" href="/Jogja/css/formpage.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/index.html">
+                <img src="/assets/logo.png" width="100px" height="100%">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="package.html">Package</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-header">
+                <h2>Book Your Adventure</h2>
+                <p>Please fill in the details below to secure your booking</p>
+            </div>
+
+            <form class="booking-form" id="bookingForm">
+               
+                <div class="form-section">
+                    <h3>Selected Package</h3>
+                    <div class="package-summary">
+                        <select name="package" id="packageSelect" required>
+                            <option value="">Select your package</option>
+                            <option value="sunrise">Budget Explorer Package - IDR 2.750.000/person</option>
+                            <option value="adventure">Standard Bali Journey - IDR 4.750.000/person</option>
+                            <option value="luxury">Premium Experience Package - IDR 8.950.000/person</option>
+                        </select>
+                    </div>
+                </div>
+
+               
+                <div class="form-section">
+                    <h3>Lead Booker Details</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <input type="text" name="leadName" required>
+                            <label>Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="leadEmail" required>
+                            <label>Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="leadPhone" required>
+                            <label>Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" 
+                                   name="leadNIK" 
+                                   id="leadNIK"
+                                   pattern="[0-9]{16}"
+                                   maxlength="16"
+                                   required>
+                            <label>NIK (16 digits)</label>
+                            <small class="error-message" id="nikError"></small>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="form-section">
+                    <h3>Group Details</h3>
+                    <div class="form-group">
+                        <select name="groupSize" id="groupSize" required>
+                            <option value="">Number of People</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                        </select>
+                    </div>
+                </div>
+
+               
+                <div id="additionalParticipants" class="form-section hidden">
+                    <h3>Additional Participants</h3>
+                    <div id="participantsForms"></div>
+                </div>
+
+              
+                <div class="form-section">
+                    <h3>Payment Details</h3>
+                    <div class="payment-info">
+                        <p>Bank Transfer to:</p>
+                        <div class="bank-details">
+                            <p>Bank BCA</p>
+                            <p>Account: 03934999323</p>
+                            <p>Name: PT Roamoria</p>
+                        </div>
+                    </div>
+                    <div class="form-group file-input">
+                        <input type="file" name="paymentProof" id="paymentProof" accept="image/*" required>
+                        <label for="paymentProof">Upload Payment Proof</label>
+                    </div>
+                </div>
+
+              
+                <div class="form-section">
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I have read and agree to the Terms and Conditions of Roamoria, including the safety rules, cancellation policy, and responsibility during the expedition.</label>
+                    </div>
+                </div>
+
+               
+                <button type="submit" class="submit-btn">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+     <footer>
+        <div class="footer-container">
+            <div class="footer-call">
+                    <h4>Call Center</h4>
+                    <ul>
+                        <li>Payment Call Center</a></li>
+                            <a href="#">WA: +62 896684930</a>
+                        <li>General Service Call Center</li>
+                            <a href="#">WA: +62 896681123</a>
+                    </ul>
+            </div>
+
+            <div class="footer-col">
+                 <h4>Navigation</h4>
+                 <ul>
+                     <a href="index.html"><li>Home</li></a>
+                     <a href="services.html"><li>Services</li></a>
+                     <a href="package.html"><li>Package</li></a>
+                    <a href="contact.html"><li>Contact</li></a>
+                 </ul>
+            </div>
+
+             <div class="footer-col">
+                <h4>Map</h4>
+                <ul>
+                    <a href="https://drive.google.com/file/d/1rM3EWW6BORbkJ7t2p4WLRXBQo4m_haSa/view"><li>Yogyakarta</li></a>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Hayati</h4>
+                <ul>
+                   <a href="https://jurnal.radenfatah.ac.id/index.php/biota/article/view/5259/3266"><li>Flora</li></a>
+                    <a href="https://journal.fapetunipa.ac.id/index.php/igkojei/article/view/301/194"><li>Fauna</li></a>
+                    <a href="https://journal.umy.ac.id/index.php/mb/article/view/3910/3378"><li>Events</li></a> 
+                </ul>
+            </div>
+
+         
+            <div class="social-icons">
+                    <a href="https://www.facebook.com/BromoVulcano/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/Mount_Bromo"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/bbtnbromotenggersemeru?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/showcase/wisata-bromo-tengger-semeru/?originalSubdomain=dk"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/Jogja/js/script.js"></script>
+    <script src="/Jogja/js/formPageValidation.js"></script>
+</body>
+</html>
